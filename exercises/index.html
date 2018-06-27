@@ -5,7 +5,34 @@
   <title>4H Careeer Explorations</title>
   <style>
      h1 {
+       color:green;
        font-weight:bold;
+     }
+#paragraphOne{
+  border-color:blue
+}
+     h2 {
+     }
+
+     /**Paragraph**/
+     p {
+      padding:5px;
+      border: 3px dotted
+    ;
+     }
+
+     /**List Item**/
+     li {
+     font-style:italic;
+     }
+
+     /**Image**/
+     img {
+     background-color:red;
+     width:200px;
+     height:200px;
+     }
+
     }
   </style>
 </head>
@@ -15,7 +42,10 @@
 
   <h1>League of Coders</h1>
   <img src="images/league-of-coders.jpg" alt="League of Coders">
-  <p>Interested in developing your own website? Considering a career in web design and development or coding apps? These are exciting fields with plenty of room to be creative and innovative! In this module, we'll start with the basics - HTML and CSS - and
+  <p id="paragraphOne">Interested in developing your own website? Considering a career in web design and development or coding apps? These are exciting fields with plenty of room to be creative and innovative! In this module, we'll start with the basics - HTML and CSS - and
+    then learn how to integrate data and add fun user interactions into your site by writing conditionals, loops and functions using Javascript. No experience required.
+  </p>
+  <p id="paragraphTwo">Interested in developing your own website? Considering a career in web design and development or coding apps? These are exciting fields with plenty of room to be creative and innovative! In this module, we'll start with the basics - HTML and CSS - and
     then learn how to integrate data and add fun user interactions into your site by writing conditionals, loops and functions using Javascript. No experience required.
   </p>
 
@@ -41,11 +71,25 @@ var namesArray = [ "Ada Lovelace","Adele Goldberg","Anita Borg","Audrey Tang","�
 "Irene Greif","Irma Wyman","Janese Swanson","Jean Bartik","Jean E. Sammet","Jeri Ellsworth","Joan Margaret Winters",
 "Joanna Rutkowska","Judith Estrin","Juliana Rotich","Karen Spärck Jones","Kathleen Booth","Kay McNulty","Kimberly Bryant",
 "Limor Fried","Lorinda Cherry","Lynn Conway","Maria Klawe","Marissa Mayer","Marlyn Wescoff","Mary Allen Wilkes","Mary Lou Jepsen",
-"Mary Shaw","Melanie","Monica S. Lam","Phyllis Fox","Radia Perlman","Rana el Kaliouby","Rósa Péter","Rebecca Enonchong","Roberta Williams",
+"Mary Shaw","Melanie","Monica S. Lam ","Phyllis Fox","Radia Perlman","Rana el Kaliouby","Rósa Péter","Rebecca Enonchong","Roberta Williams",
 "Ruchi Sanghvi","Ruth Lichterman","Sally Floyd","Sandra Kurtzig","Susan Estrada","Susan Nycum","Thelma Estrin","Window Snyder","Xiaoyuan Tu"];
 //Output first element
 document.write("First item in array:" + namesArray[0]);
-  </script>
+if(namesArray[0] == "Ada ") {
+  document.write("<br>First item in array:" + namesArray[0] + "*");
+}else{
+  //alert("NOT ADA!")
+
+}
+document. write ("ul");
+var index;
+for(index = 0; index < namesArray.length; index++) {
+  document.write("<li>" + namesArray[index]+"</li>");
+}
+document. write ("ul");
+
+</script>
+
 
 
 </body>

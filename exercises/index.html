@@ -60,6 +60,7 @@
     document.write("String variable: " + myStringVariable);
     document.write("Number variable: " + myNumberVariable);
     document.write("String length: " + myStringVariable.toUpperCase());
+    console.log(myStringVariable);
 
     //Store list/array in variable
     var namesArray = [ "Ada Lovelace","Adele Goldberg","Anita Borg","Audrey Tang","Éva Tardos","Barbara Liskov","Beatrice Helen Worsley",
@@ -84,7 +85,17 @@ document.write ("<ul>");
       document.write("<li>" + namesArray[index] + "</li>");
     }
 document.write ("</ul>");
-  </script>
+
+
+var numbers = [1,2,3,4,5,6];
+for (var i = 0; i < numbers.length; i++) {
+  if ((numbers [i] % 2) == 0) {
+    document.write ("<br>" + numbers [i]);
+  }
+}
+
+
+ </script>
 
 
 </body>

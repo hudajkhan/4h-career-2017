@@ -2,10 +2,43 @@
 <html>
 
 <head>
-  <title>4H Careeer Explorations</title>
+  <title>4H Careeeeeeeeeeeeeeeeeeeeeeeeeeeeeer Exploooooooooooooooooooooooooooooooooooooooooooooooooooooooooorations</title>
   <style>
-     h1 {
-       font-weight:bold;
+
+    /**Headings**/
+    h1 {
+      font-size:60px;
+      color:blue;
+      font-weight:bold;
+    }
+
+    /**Paragraph**/
+    p {
+     padding:5px;
+     border: 5px solid black;
+    }
+
+    /**List Item**/
+    li {
+    font-style:italic;
+    }
+
+    /**Image**/
+    img {
+    background-color:red;
+    width:200px;
+    height:200px;
+    }
+
+    #nice {
+      border-color:magenta;
+    }
+
+    #nice2 {
+      font-size:36px;
+      color:blue;
+      border: 15px solid blue;
+
     }
   </style>
 </head>
@@ -14,8 +47,12 @@
 
 
   <h1>League of Coders</h1>
-  <img src="images/league-of-coders.jpg" alt="League of Coders">
-  <p>Interested in developing your own website? Considering a career in web design and development or coding apps? These are exciting fields with plenty of room to be creative and innovative! In this module, we'll start with the basics - HTML and CSS - and
+  <img class="niceclassbro" src="images/league-of-coders.jpg" alt="League of Coders">
+  <p id="nice">Interested in developing your own website? Considering a career in web design and development or coding apps? These are exciting fields with plenty of room to be creative and innovative! In this module, we'll start with the basics - HTML and CSS - and
+    then learn how to integrate data and add fun user interactions into your site by writing conditionals, loops and functions using Javascript. No experience required.
+  </p>
+
+  <p id="nice2">Interested in developing your own website? Considering a career in web design and development or coding apps? These are exciting fields with plenty of room to be creative and innovative! In this module, we'll start with the basics - HTML and CSS - and
     then learn how to integrate data and add fun user interactions into your site by writing conditionals, loops and functions using Javascript. No experience required.
   </p>
 
@@ -42,8 +79,23 @@
     "Mary Shaw","Melanie","Monica S. Lam","Phyllis Fox","Radia Perlman","Rana el Kaliouby","Rósa Péter","Rebecca Enonchong","Roberta Williams",
     "Ruchi Sanghvi","Ruth Lichterman","Sally Floyd","Sandra Kurtzig","Susan Estrada","Susan Nycum","Thelma Estrin","Window Snyder","Xiaoyuan Tu"];
     //Output first element
-    document.write("First item in array:" + namesArray[0]);
+    document.write("First item in array:" + namesArray[1]);
+    //If conditional
+    //If first element equals a certain value, then add an asterisk
+    if(namesArray[0] == "Ada") {
+      document.write("<br>First item in array:" + namesArray[0] + "*");
+    } else {
+      //alert("hi")
+    }
+
+   document.write("<ul>")
+   var index;
+   for(index = 0; index < namesArray.length; index++) {
+      document.write("<li>" + namesArray[index]);
+     }
+   document.write("</ul>")
   </script>
+
 
 
 </body>

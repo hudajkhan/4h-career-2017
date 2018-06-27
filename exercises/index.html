@@ -19,6 +19,10 @@
     }
 
     /**List Item**/
+
+    #hi {
+      font-size:60px;
+    }
     li {
     font-style:italic;
     }
@@ -40,6 +44,7 @@
       border: 15px solid blue;
 
     }
+
   </style>
 </head>
 
@@ -68,6 +73,7 @@
     document.write("String variable:" + myStringVariable);
     document.write("Int variable: " + myNumberVariable);
     document.write("String length:" + myStringVariable.length);
+    console.log(myStringVariable);
 
     var namesArray = [ "Ada Lovelace","Adele Goldberg","Anita Borg","Audrey Tang","Éva Tardos","Barbara Liskov","Beatrice Helen Worsley",
     "Betty Holberton","Carla Meninsky","Carol Shaw","Dame Stephanie","Dana Ulery","Donna Dubinsky","Edith Clarke",
@@ -91,9 +97,19 @@
    document.write("<ul>")
    var index;
    for(index = 0; index < namesArray.length; index++) {
-      document.write("<li>" + namesArray[index]);
+      document.write("<li id='hi'>" + namesArray[index]);
      }
    document.write("</ul>")
+   var array = [1, 2, 3, 4, 5, 6];
+   for (var i = 0; i < array.length; i++) {
+     if (array[i] % 2 == 0){
+       console.log(array[i] + " is even")
+     }
+     else {
+       console.log(array[i] + " is odd")
+     }
+     document.write(array[i])
+   }
   </script>
 
 

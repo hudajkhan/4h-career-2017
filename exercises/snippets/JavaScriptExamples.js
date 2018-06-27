@@ -16,7 +16,7 @@ var namesArray = [ "Ada Lovelace","Adele Goldberg","Anita Borg","Audrey Tang","�
 "Mary Shaw","Melanie","Monica S. Lam","Phyllis Fox","Radia Perlman","Rana el Kaliouby","Rósa Péter","Rebecca Enonchong","Roberta Williams",
 "Ruchi Sanghvi","Ruth Lichterman","Sally Floyd","Sandra Kurtzig","Susan Estrada","Susan Nycum","Thelma Estrin","Window Snyder","Xiaoyuan Tu"];
 //Output first element
-document.write("First item in array:" + namesArray[0]);
+document.write("First item in array:" + namesArray[0  ]);
 
 
 //If conditional

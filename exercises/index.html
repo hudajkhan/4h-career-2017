@@ -61,6 +61,7 @@ var myNumberVariable = 1952 ;
 document.write("String variable:" + myStringVariable );
 document.write("<br>String length:" + myStringVariable.length);
 document.write( "<br>Number variable:" +  myNumberVariable);
+console.log( myStringVariable);
 
 var namesArray = [ "Ada Lovelace","Adele Goldberg","Anita Borg","Audrey Tang","Éva Tardos","Barbara Liskov","Beatrice Helen Worsley",
 "Betty Holberton","Carla Meninsky","Carol Shaw","Dame Stephanie","Dana Ulery","Donna Dubinsky","Edith Clarke",
@@ -86,6 +87,14 @@ document.write("<ul>")
 var index;
 for(index = 0; index < namesArray.length; index++) {
   document.write("<li>" + namesArray[index] + "</li>");
+}
+var numbers = [1,2,3,4,5,6,7,8,9]
+for (var i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2) == 0{
+document.wirte(i"<br>" + numbers[i]);
+}
+  }
+
 }
   </script>
 

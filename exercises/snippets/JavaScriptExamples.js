@@ -4,7 +4,7 @@ var myNumberVariable = 1952;
 
 //Output variable
 document.write("String variable:" + myStringVariable);
-document.write("First item in array:" + namesArray[1]);
+
 //Store list/array in variable
 var namesArray = [ "Ada Lovelace","Adele Goldberg","Anita Borg","Audrey Tang","Éva Tardos","Barbara Liskov","Beatrice Helen Worsley",
 "Betty Holberton","Carla Meninsky","Carol Shaw","Dame Stephanie","Dana Ulery","Donna Dubinsky","Edith Clarke",
@@ -16,7 +16,7 @@ var namesArray = [ "Ada Lovelace","Adele Goldberg","Anita Borg","Audrey Tang","�
 "Mary Shaw","Melanie","Monica S. Lam","Phyllis Fox","Radia Perlman","Rana el Kaliouby","Rósa Péter","Rebecca Enonchong","Roberta Williams",
 "Ruchi Sanghvi","Ruth Lichterman","Sally Floyd","Sandra Kurtzig","Susan Estrada","Susan Nycum","Thelma Estrin","Window Snyder","Xiaoyuan Tu"];
 //Output first element
-
+  document.write("First item in array:" + namesArray[0]);
 
 
 //If conditional

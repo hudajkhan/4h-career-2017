@@ -8,43 +8,11 @@
        font-weight:bold;
     }
     .center-big{
-      font-size:100px;
+      font-size:300px;
       font-style:bold;
       color: rgb(2222222,0,222222222);
 
     }
-    /**Headings**/
-    h1 {
-      color:blue;
-      font-weight:bold;
-    }
-
-    h2 {
-    }
-
-    /**Paragraph**/
-    p {
-     padding:5px;
-     border: 1px solid black;
-     border-color: red;
-    }
-
-    /**List Item**/
-    li {
-    font-style:italic;
-    }
-
-    /**Image**/
-    img {
-    background-color:red;
-    width:200px;
-    height:200px;
-    }
-
-    #paragraph1{
-      font-size: 50px;
-    }
-
   </style>
 </head>
 
@@ -56,10 +24,9 @@
   <a href = "https://www.google.com" class = "center-big"> hello world </a>
 </center>
   <img src="images/league-of-coders.jpg" alt="League of Coders">
-  <p id = "paragraph1">Interested in developing your own website? Considering a career in web design and development or coding apps? These are exciting fields with plenty of room to be creative and innovative! In this module, we'll start with the basics - HTML and CSS - and
+  <p>Interested in developing your own website? Considering a career in web design and development or coding apps? These are exciting fields with plenty of room to be creative and innovative! In this module, we'll start with the basics - HTML and CSS - and
     then learn how to integrate data and add fun user interactions into your site by writing conditionals, loops and functions using Javascript. No experience required.
   </p>
-  <p id = "paragraph1"> hi hi hi </p>
 
 
   <!-- Include JavaScript examples within script tags below -->
@@ -85,23 +52,8 @@
       document.write("First item in array:" + namesArray[0] + "*");
     }
     else{
-      //alert("not ada");
+      alert("not ada");
     }
-    var index;
-    for(index = 0; index < namesArray.length; index++) {
-      document.write("<li>" + namesArray[index]);
-    }
-
-    var ary = [1,2,3,4,5,6,7,8,9,10];
-    var ary2 = [];
-    for (var int in ary){
-      if(ary[int] % 2 == 0){
-        ary2.push(ary[int]);
-      }
-    }
-    console.log(ary);
-    console.log(ary2);
-
   </script>
 
 

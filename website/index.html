@@ -200,6 +200,7 @@ function searchForName(searchTerm){
   console.log(profilesArray);
   //For loop with objects
   var index;
+  var matchFound = false;
   for(index = 0; index < profilesArray.length; index++) {
     //document.write("<li>" + profilesArray[index]["given_name"] + " " + "</li>");
     //Next step: also output last name
@@ -208,7 +209,7 @@ function searchForName(searchTerm){
     if(name == searchTerm){
       document.write("<br>" + name + " " + profilesArray[index].surname);
     } else{
-      document.write("<br> No Match! Dinosaur");
+      //document.write("<br> No Match! Dinosaur");
     }
   }
 }

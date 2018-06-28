@@ -129,15 +129,46 @@
       var profiles = data.profiles;
       for (var i = 0; i < profiles.length; i++) {
         var surname = profiles[i].surname;
+        console.log(surname);
         var firstLetter = surname.charAt(0);
-        console.log(firstLetter);
-        if(firstLetter == "B") {
-          document.getElementById('women_in_)tech').innerHTML += "<h2>A</h2>";
-        }
+        //console.log(firstLetter);
+        //if(firstLetter == "B") {
+        //  document.getElementById('women_in_)tech').innerHTML += "<h2>A</h2>";
+        //}
         document.getElementById('women_in_tech').innerHTML +=
         ("<li><img class='ourimage'src=" + profiles[i].image_path + ">" + profiles[i].given_name + " " + profiles[i].surname + "</li>")
       }
     });
+
+    var profilesArray =
+          "id":"0",
+          "name":"Ada Lovelace",
+          "details":"Augusta Ada King, Countess of Lovelace, born Augusta Ada Byron and now commonly known as Ada Lovelace, was an English mathematician and writer chiefly known for her work on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine. Her notes on the engine include what is recognized as the first algorithm intended to be carried out by a machine. Because of this, she is often described as the world's first computer programmer.",
+          "website":"http://en.wikipedia.org/wiki/Ada_Lovelace",
+          "image_path":"/img/profile/220px-Ada_Lovelace_portrait.jpg",
+          "image_width":"150",
+          "tags":"Ada Lovelace Day,History of Computing,Women in Tech",
+          "dbpedia_uri":"http://dbpedia.org/resource/Ada_Lovelace",
+          "birth_year":"1815",
+          "death_year":"1852",
+          "given_name":"Ada",
+          "surname":"Lovelace"
+
+    function searchForName(searchterm){
+      console.log(searchterm);
+      console.log(profilesArray);
+      //For loop with objects
+      var index;
+      for (index = 0; index < profilesArray.length; index++){
+        var name = profilesArray[index].given_name;
+        console.log("name is " + name);
+        if (name == searchTerm) {
+          document.write("<br>" + name + " " + profilesArray[index].surname);
+        }
+      }
+    }
+    searchForName("doctor strange")
+
     </script>
   </body>
 </html>

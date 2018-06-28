@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <title>Navigation Code</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+
       .primary-nav {
         margin-top: 15px
       }
@@ -131,13 +137,26 @@
         var surname = profiles[i].surname;
         var firstLetter = surname.charAt(0);
         console.log(firstLetter);
-        if(firstLetter == "B") {
-          document.getElementById('women_in_)tech').innerHTML += "<h2>A</h2>";
-        }
+        // if(firstLetter == "B") {
+        //   document.getElementById('women_in_tech').innerHTML += "<h2>A</h2>";
+        // }
         document.getElementById('women_in_tech').innerHTML +=
         ("<li><img class='ourimage'src=" + profiles[i].image_path + ">" + profiles[i].given_name + " " + profiles[i].surname + "</li>")
       }
+      // Uncomment next line to run the slick slider function
+      // sliderInit();
     });
+    // Slick Slider
+    function sliderInit(){
+      $('#women_in_tech').slick({
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+          infinite: true,
+          cssEase: 'linear'
+      });
+    };
+
     </script>
   </body>
 </html>
